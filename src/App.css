@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*Layout*/
+.App {
+	font-family: 'Lato', sans-serif;
+	height: 100vh;
+	z-index: 1;
+}
+
+/*Hero*/
+.header{
+	color: white;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+	background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0));
+}
+.container-hero{
+	background-image: url(./images/pope-francis.jpg);
+	background-size: 100%;
+	max-width: 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+h1{
+	font-size: 30px;
+}
+.menu{
+	display:flex;
+	justify-content: space-between;
+	color:white;
+	text-decoration: none;
+}
+.menu a{
+	color:white;
+	text-decoration: none;
+}
+.menu ul {
+	text-decoration: none;
+}
+.menu li {
+	padding-right: 18px;
+	list-style: none;
+	font-size: 16px;	
+}
+.menu li:hover{
+	background: #FFB533;
+	transform: scale(1.2);
+	transition: .5s;
+	border-radius: 40% 0 / 20% 0;
+}
+.votos{
+	width: 40%;
+	margin: 100px;
+	color: white;
+}
+.opinion{
+	background: black;
+	opacity: 0.5;
+	padding: 30px;
+	font-weight: bold;
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icons{
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	text-align: center;
+}
+.icons .like{
+	background: #2DBCB4;
+	width: 50%;
+	padding: 20px;
+	font-size:40px;
+}
+.dislike{
+	background: #FFB533;
+	width: 50%;
+	padding: 20px;
+	font-size:40px;
+}
+h2{
+	font-size:40px;
+}
+.opinion a{
+	color: white;
+}
+
+.info{
+	position: absolute;
+	bottom: 0;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	/* margin-left: 100px; */
+	background: rgb(97, 94, 94);
+	width: 100%;
+	opacity: 0.5;
+}
+
+/*Counted*/
+.counted{
+	background: #9e9e9e3d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 25px;
+	margin-left:100px;
+	margin-right: 100px;
+	margin-top:10px;
+}
+.counted-r{
+	margin-left: 50px;
+}
+h3{
+	font-size:30px;
+	margin:0;
+}
+.voto{
+	color: #726c6c;
+	margin-left: 100px;
+	font-size: 34px;
+	margin-top:20px;
+}
+.persons{
+	display: grid;
+    /* flex-basis: auto; */
+		grid-template-columns: repeat(auto-fit, 500px);
+		/* grid-template-rows: 400px; */
+		grid-gap: 20px;
+		justify-content: center;
+		margin-top:20px;
+}
+.person{
+	color:white;
+}
+.description{
+	padding: 160px 20px;
+}
+.votes-count{
+	display:flex;
+}
+.votes-count button{
+	margin-left:20px;
+}
+.fa-thumbs-up{
+	color: white;
+	background: #2DBCB4;
+	margin-right: 5px;
+	padding: 6px;
+
+}
+.fa-thumbs-down{
+	background: #FFB533;
+	padding: 6px;
+}
+.percent-bar{
+	margin-top:10px;
+	opacity: 0.9;
+	font-weight: bold;
+	display: flex;
+}
+.percent-bar-up{
+	background: #2DBCB4;
+	padding: 12px;
+}
+.percent-bar-down{
+	background: #FFB533;	
+	padding: 12px;
+}
+.votes-count button{
+	background: transparent;
+	border: 2px solid white;
+	color: beige;
+	outline: none;
+}
+/******Footer*****/
+.container-f{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left:70px;
+	margin-right: 70px;
+	background: #a8abae82;
+	margin-top:10px;
+	padding: 2px 10px;
+}
+.suscription-b button{
+	border: solid black 2px;
+	background: transparent;
+	padding: 8px 15px;
+}
+@media screen and (max-width: 1200px){
+	.votos{
+		display: none;
+	}
+	.info{
+		display: none;
+	}
+	.container-hero{
+		height: 50%;
+	}
+}
+@media screen and (max-width: 768px){
+.counted{
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.persons{
+	grid-template-columns: repeat(auto-fit, 319px);
+}
+h1{
+	margin:0;
+	padding: 15px 15px;
+	}
+}
+@media screen and (max-width: 768px){
+	.container-hero{
+		height: 30%;
+	}
+	.header{
+		display:block;
+	}
+	.menu{
+		background: #2dbcb4;
+	}
+	.container-f{
+		margin-left:5px;
+		margin-right: 5px;
+	}
+	.suscription-b button{
+		border: solid black 2px;
+		background: transparent;
+		padding: 4px 8px;
+	}
+}

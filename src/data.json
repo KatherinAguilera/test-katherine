@@ -1,0 +1,23 @@
+{
+	"persons" : [{
+		"name": "Kanye West",
+		"image": "./images/kayne-west.jpg",
+		"percentScore": 2
+	},
+	{
+		"name": "Mark Zuckerberg",
+		"image": "./images/mark-zuckerberg.jpg",
+		"percentScore": 20
+	},
+	{
+		"name": "Cristina Fernández de Kitchner",
+		"image": "./images/kristina-fernandez-de-kitchner.jpg",
+		"percentScore": 10
+
+	},
+	{
+		"name": "Malala Yousafzai",
+		"image": "./images/malala-yousafzai.jpg",
+		"percentScore": 80
+	}]
+}
