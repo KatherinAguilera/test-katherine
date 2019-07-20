@@ -2,5 +2,5 @@
 Use create-react-app
 
 ## Run
-npm install  -  yarn install
-npm run start
+* npm install  -  yarn install
+* npm run start
