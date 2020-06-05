@@ -215,6 +215,11 @@ h3{
 .counted{
 	margin-left: 2px;
 	margin-right: 2px;
+  display: block;
+  color: #333333
+}
+.counted-r {
+  margin-left: 0;
 }
 .persons{
 	grid-template-columns: repeat(auto-fit, 319px);
@@ -225,6 +230,12 @@ h1{
 	}
 }
 @media screen and (max-width: 768px){
+  h1{
+    padding-top:96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 	.container-hero{
 		height: 30%;
 	}
@@ -233,7 +244,20 @@ h1{
 	}
 	.menu{
 		background: #2dbcb4;
+    position: fixed;
+    width: 100%;
+    top: -20px;
+    z-index: 2;
+    height: 20px;
+    padding-left: 2px;
 	}
+  .menu ul{
+    justify-content: space-around;
+    padding: 8px 0;
+  }
+  .menu li{
+    padding-right: 0;
+  }
 	.container-f{
 		margin-left:5px;
 		margin-right: 5px;
